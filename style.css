@@ -1,0 +1,40 @@
+.container {
+   border: 1px solid black; 
+   position: relative;
+   width: 500px;
+   height: 500px;
+}
+
+.swimmer {
+    border: 1px solid red;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0px;
+}
+
+[data-swimmer="2"] {
+    top: 55px;
+}
+
+[data-swimmer="3"] {
+    top: 110px;
+}
+
+.swimmer1 {
+    animation: swim 2s infinite;
+}
+
+.swimmer2 {
+    animation: swim 2.2s infinite;
+}
+
+.swimmer3 {
+    animation: swim 2.7s infinite;
+}
+
+@keyframes swim {
+    to {
+        right: 450px;
+    }
+}
